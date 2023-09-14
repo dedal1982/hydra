@@ -806,3 +806,54 @@ button {
 .swiper-button-next-mobile::after {
   content: url(../images/arrow-m2.svg) !important;
 }
+/*tech*/
+.tech {
+}
+.tech__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 114px;
+}
+.tech__top {
+  background: rgba(33, 30, 46, 1);
+  box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
+  border-radius: 160px;
+  height: 303px;
+  overflow: hidden;
+  transition: all 1s ease 0s;
+}
+.tech__top-full {
+  height: 630px;
+  border-radius: 40px;
+  transition: all 1s ease 0s;
+}
+.tech__top-arrow {
+  display: flex;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+  border-radius: 50%;
+  position: relative;
+  bottom: 35px;
+  left: calc((100% - 70px) / 2);
+  cursor: pointer;
+}
+.tech__top-icon {
+  transition: all 0.5s ease 0s;
+}
+.tech__top-icon.active {
+  transform: rotate(540deg);
+  transition: all 0.5s ease 0s;
+}
+.tech__top-image {
+  width: 100%;
+  opacity: 0.6;
+}
+.tech__list {
+  display: flex;
+}
+.tech__label {
+  width: 282px;
+  height: 282px;
+}
