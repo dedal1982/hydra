@@ -797,7 +797,7 @@ button {
   width: 38px !important;
   height: 38px !important;
   margin-top: calc(253px - (var(--swiper-navigation-size) / 2)) !important;
-  margin-left: 325px !important;
+  margin-left: 322px !important;
   position: absolute;
   z-index: 15;
   background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
