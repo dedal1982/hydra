@@ -42,6 +42,9 @@ button {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .services__container {
+    padding: 0;
+  }
 }
 /*header*/
 .header {
@@ -749,7 +752,7 @@ button {
 @media screen and (max-width: 1280px) {
   .services__swiper {
     display: flex !important;
-    width: 320px;
+    width: 369px;
     height: 511px;
   }
 }
@@ -763,6 +766,7 @@ button {
   padding: 27px 30px 36px 30px;
   box-sizing: border-box;
   align-items: center;
+  margin: 0 auto;
 }
 .services__button-mobile {
   width: 250px;
@@ -775,4 +779,30 @@ button {
   line-height: 17.07px;
   color: rgba(52, 48, 69, 1);
   margin-top: 32px;
+}
+.swiper-button-prev-mobile {
+  width: 38px !important;
+  height: 38px !important;
+  margin-top: calc(253px - (var(--swiper-navigation-size) / 2)) !important;
+  margin-left: 9px !important;
+  position: absolute;
+  z-index: 15;
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+  border-radius: 50%;
+}
+.swiper-button-prev-mobile::after {
+  content: url(../images/arrow-m.svg) !important;
+}
+.swiper-button-next-mobile {
+  width: 38px !important;
+  height: 38px !important;
+  margin-top: calc(253px - (var(--swiper-navigation-size) / 2)) !important;
+  margin-left: 325px !important;
+  position: absolute;
+  z-index: 15;
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+  border-radius: 50%;
+}
+.swiper-button-next-mobile::after {
+  content: url(../images/arrow-m2.svg) !important;
 }

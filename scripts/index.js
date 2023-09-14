@@ -1,25 +1,14 @@
-const swiperOne = new Swiper(".hero__swiper", {
+const swiper1 = new Swiper(".hero__swiper", {
   // Optional parameters
   direction: "horizontal",
   loop: false,
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
   },
 });
-const swiperTwo = new Swiper(".services__swiper", {
+const swiper2 = new Swiper(".services__swiper", {
   // Optional parameters
   direction: "horizontal",
   loop: false,
@@ -31,8 +20,8 @@ const swiperTwo = new Swiper(".services__swiper", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next-mobile",
+    prevEl: ".swiper-button-prev-mobile",
   },
 
   // And if we need scrollbar
