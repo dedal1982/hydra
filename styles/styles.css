@@ -661,3 +661,118 @@ button {
     align-self: center;
   }
 }
+/*services*/
+.services {
+}
+.services__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 107px;
+  gap: 101px;
+}
+@media screen and (max-width: 1280px) {
+  .services__wrapper {
+    margin-top: 60px;
+    gap: 26px;
+  }
+}
+.services__gallery {
+  display: flex;
+  gap: 11px;
+}
+@media screen and (max-width: 1280px) {
+  .services__gallery {
+    display: none;
+  }
+}
+.services__item {
+  width: 310px;
+  height: 511px;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(50% 50% at 50% 50%, #433d60 0%, #211e2e 100%);
+  border-radius: 40px;
+  padding: 23px 30px 40px 30px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.services__image {
+  width: 190.92px;
+  height: 190.92px;
+  border-radius: 50%;
+  border: 16px solid rgba(14, 14, 14, 0.32);
+}
+.services__title {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29.26px;
+  margin-top: 18px;
+  position: relative;
+}
+.services__title::before {
+  position: absolute;
+  content: "";
+  width: 154px;
+  border: 1px solid rgba(192, 183, 232, 0.33);
+  top: 46px;
+  transition: 0.3s;
+}
+.services__title:hover::before {
+  background: rgba(192, 183, 232, 0.33);
+}
+.services__paragraph {
+  margin-top: 36px;
+  width: 100%;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20.63px;
+  text-align: center;
+}
+.services__button {
+  width: 154px;
+  height: 48px;
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+  cursor: pointer;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: rgba(52, 48, 69, 1);
+  margin-top: 32px;
+}
+/*services__swiper*/
+.services__swiper {
+  display: none !important;
+}
+@media screen and (max-width: 1280px) {
+  .services__swiper {
+    display: flex !important;
+    width: 320px;
+    height: 511px;
+  }
+}
+.services__item-mobile {
+  width: 320px;
+  height: 511px;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(50% 50% at 50% 50%, #433d60 0%, #211e2e 100%);
+  border-radius: 40px;
+  padding: 27px 30px 36px 30px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.services__button-mobile {
+  width: 250px;
+  height: 48px;
+  background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+  cursor: pointer;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17.07px;
+  color: rgba(52, 48, 69, 1);
+  margin-top: 32px;
+}
