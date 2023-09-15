@@ -10,7 +10,7 @@ burgerClick.addEventListener("click", () => {
   // scrollLock.classList.toggle("lock");
 });
 
-const buttonTechDown = document.querySelector(".tech__top-arrow");
+const buttonTechDown = document.querySelector(".tech__top-button");
 const techTopImage = document.querySelector(".tech__top");
 const buttonTechImg = document.querySelector(".tech__top-icon");
 
@@ -25,10 +25,11 @@ const swiper1 = new Swiper(".hero__swiper", {
   loop: false,
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".hero__swiper-button-next",
+    prevEl: ".hero__swiper-button-prev",
   },
 });
+
 const swiper2 = new Swiper(".services__swiper", {
   // Optional parameters
   direction: "horizontal",
@@ -45,6 +46,43 @@ const swiper2 = new Swiper(".services__swiper", {
     prevEl: ".swiper-button-prev-mobile",
   },
 
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
+
+const swiper3 = new Swiper(".tech__swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: false,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    prevEl: ".tech__swiper-button-prev",
+    nextEl: ".tech__swiper-button-next",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
+
+const swiper4 = new Swiper(".process__swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: false,
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   // And if we need scrollbar
   scrollbar: {
     el: ".swiper-scrollbar",
