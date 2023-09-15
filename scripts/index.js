@@ -73,3 +73,25 @@ const swiper3 = new Swiper(".tech__swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+const swiper4 = new Swiper(".process__swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: false,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".process__swiper-button-next",
+    prevEl: ".process__swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
