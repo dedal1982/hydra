@@ -42,8 +42,8 @@ const swiper2 = new Swiper(".services__swiper", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next-mobile",
-    prevEl: ".swiper-button-prev-mobile",
+    nextEl: ".services__swiper-button-next",
+    prevEl: ".services__swiper-button-prev",
   },
 
   // And if we need scrollbar
@@ -64,25 +64,10 @@ const swiper3 = new Swiper(".tech__swiper", {
 
   // Navigation arrows
   navigation: {
-    prevEl: ".tech__swiper-button-prev",
-    nextEl: ".tech__swiper-button-next",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-});
-
-const swiper4 = new Swiper(".process__swiper", {
-  // Optional parameters
-  direction: "horizontal",
-  loop: false,
-  // Navigation arrows
-  navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+
   // And if we need scrollbar
   scrollbar: {
     el: ".swiper-scrollbar",
